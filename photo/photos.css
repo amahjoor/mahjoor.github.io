@@ -1,0 +1,136 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Set background color to white */
+    color: #000000;
+    font-size: 1.1rem;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff; /* Set background color to white */
+    border-bottom: 1px solid #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main Styles */
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff; /* Set background color to white */
+    border-top: 1px solid #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.3rem;
+}
+
+footer p a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* other */
+#rotating-text {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.img-circle {
+    width: 250px; /* Adjust as needed */
+    height: 250px; /* Adjust as needed */
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Hide the overflowing parts of the image */
+    position: fixed;
+    right: 90px;
+    top: 150px;
+}
+
+.img-circle img {
+    object-fit: cover !important;
+    object-position: center -40px !important;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.grid {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Allow the items to wrap to the next line */
+    justify-content: space-between; /* Adjust the space between grid items */
+}
+
+.grid-item {
+    width: calc(33.333% - 20px); /* Adjust the width and margin to suit your design */
+    margin-bottom: 10px;
+    margin-right: 5px; /* Added horizontal margin */
+    margin-left: 5px; /* Added horizontal margin */
+    background: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Include padding and border in element's content width */
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 10px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>grind time.</title>
+  <link rel="stylesheet" href="pomodoro.css">
+</head>
+<body>
+  <div id="app">
+    <div class="timer">
+      <span id="minutes">20</span>:<span id="seconds">00</span>
+    </div>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
+    <button onclick="resetTimer()">Reset</button>
+  </div>
+  <div class="counter" id="counter"></div>
+  <div class="goal" id="goal">
+    <ul>
+        <u><b><i>daily pomodoro goal</i></b></u>
+        <li>3 for discrete math</li>
+        <li>3 for statistics</li>
+        <li>3 for programming</li>
+    </ul>
+  </div>
+
+  <script src="pomodoro.js"></script>
+</body>
+</html>

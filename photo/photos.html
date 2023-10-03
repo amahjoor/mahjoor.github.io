@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Album</title>
+    <link rel="stylesheet" href="photos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pictures</h1>
+    </header>
+    <main>
+        <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 600 }'>
+            <div class="grid-item">
+                <img src="photos/korea/1.jpeg" alt="Seoul">
+            </div>
+            <div class="grid-item">
+                <img src="photos/korea/2.jpeg" alt="Seoul">
+            </div>
+            <div class="grid-item">
+                <img src="photos/korea/3.png" alt="Hongdae">
+            </div>
+            <div class="grid-item">
+                <img src="photos/korea/4.jpg" alt="Dinner">
+                </div>
+            <div class="grid-item">
+                <img src="photos/korea/5.jpeg" alt="SFW">
+            </div>
+            <div class="grid-item">
+                <img src="photos/korea/6.jpeg" alt="Daejeon">
+            </div>
+            <div class="grid-item">
+                <img src="photos/korea/7.jpeg" alt="Dongdaemun">
+            </div>
+            <div class="grid-item">
+                <img src="photos/korea/8.jpeg" alt="Daegu">
+            </div>
+            <div class="grid-item">
+                <img src="photos/korea/9.jpeg" alt="HBD">
+            </div>
+            <div class="grid-item">
+                <img src="photos/korea/10.jpeg" alt="Chorus Coffee">
+            </div>
+            <div class="grid-item">
+                <img src="photos/korea/11.jpeg" alt="Busan">
+            </div>
+                <div class="grid-item">
+                <img src="photos/korea/12.jpeg" alt="Busan">
+            </div>
+            <div class="grid-item">
+                <img src="photos/korea/13.jpg" alt="Description of Image 13">
+            </div>
+            <div class="grid-item">
+                <img src="photos/korea/14.jpeg" alt="Description of Image 14">
+            </div>
+            <div class="grid-item">
+                <img src="photos/korea/15.jpeg" alt="Description of Image 15">
+            </div>
+            <div class="grid-item">
+                <img src="photos/korea/16.jpeg" alt="Description of Image 16">
+            </div>
+            <div class="grid-item">
+                <img src="photos/korea/17.jpeg" alt="Description of Image 17">
+            </div>
+            <div class="grid-item">
+                <img src="photos/korea/18.jpeg" alt="Description of Image 18">
+            </div>
+            <div class="grid-item">
+                <img src="photos/korea/19.jpeg" alt="Description of Image 19">
+            </div>
+            <div class="grid-item">
+                <img src="photos/korea/20.jpeg" alt="Description of Image 20">
+            </div>
+            <!-- Add more images as needed -->
+        </div>    
+    </main>
+    <br>
+    <footer>
+        <p>Copyright © Arman Mahjoor</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script>
+        // Initialize Masonry after all images have loaded
+        var grid = document.querySelector('.grid');
+        var msnry;
+        imagesLoaded( grid, function() {
+          // initialize Masonry after all images have loaded
+          msnry = new Masonry( grid, {
+            itemSelector: '.grid-item',
+            columnWidth: 600
+          });
+        });
+    </script>
+    
+
+</body>
+
+</html>
